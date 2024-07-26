@@ -296,12 +296,92 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
         {
             // Cannot pass blank UUID list for security reasons.
             // Assume all devices have the Generic Access service 0x1800
-            CBUUID* gasUuid = [CBUUID UUIDWithString:@"1800"];
-            CBUUID* gasUuid1 = [CBUUID UUIDWithString:@"1801"];
-            CBUUID* gasUuid2 = [CBUUID UUIDWithString:@"fac1ba2f-61a2-4d83-9a8c-60087c232569"];
+            CBUUID* gasUuid = [CBUUID UUIDWithString:@"fac1ba2f-61a2-4d83-9a8c-60087c232569"];
+
+            CBUUID* Uuid0 = [CBUUID UUIDWithString:@"1800"];
+            CBUUID* Uuid1 = [CBUUID UUIDWithString:@"1801"];
+            CBUUID* Uuid2 = [CBUUID UUIDWithString:@"1802"];
+            CBUUID* Uuid3 = [CBUUID UUIDWithString:@"1803"];
+            CBUUID* Uuid4 = [CBUUID UUIDWithString:@"1804"];
+            CBUUID* Uuid5 = [CBUUID UUIDWithString:@"1805"];
+            CBUUID* Uuid6 = [CBUUID UUIDWithString:@"1806"];
+            CBUUID* Uuid7 = [CBUUID UUIDWithString:@"1807"];
+            CBUUID* Uuid8 = [CBUUID UUIDWithString:@"1808"];
+            CBUUID* Uuid9 = [CBUUID UUIDWithString:@"1809"];
+            CBUUID* Uuid10 = [CBUUID UUIDWithString:@"180A"];
+            CBUUID* Uuid11 = [CBUUID UUIDWithString:@"180D"];
+            CBUUID* Uuid12 = [CBUUID UUIDWithString:@"180E"];
+            CBUUID* Uuid13 = [CBUUID UUIDWithString:@"180F"];
+            CBUUID* Uuid14 = [CBUUID UUIDWithString:@"1810"];
+            CBUUID* Uuid15 = [CBUUID UUIDWithString:@"1811"];
+            CBUUID* Uuid16 = [CBUUID UUIDWithString:@"1812"];
+            CBUUID* Uuid17 = [CBUUID UUIDWithString:@"1813"];
+            CBUUID* Uuid18 = [CBUUID UUIDWithString:@"1814"];
+            CBUUID* Uuid19 = [CBUUID UUIDWithString:@"1815"];
+            CBUUID* Uuid20 = [CBUUID UUIDWithString:@"1816"];
+            CBUUID* Uuid21 = [CBUUID UUIDWithString:@"1818"];
+            CBUUID* Uuid22 = [CBUUID UUIDWithString:@"1819"];
+            CBUUID* Uuid23 = [CBUUID UUIDWithString:@"181A"];
+            CBUUID* Uuid24 = [CBUUID UUIDWithString:@"181B"];
+            CBUUID* Uuid25 = [CBUUID UUIDWithString:@"181C"];
+            CBUUID* Uuid26 = [CBUUID UUIDWithString:@"181D"];
+            CBUUID* Uuid27 = [CBUUID UUIDWithString:@"181E"];
+            CBUUID* Uuid28 = [CBUUID UUIDWithString:@"181F"];
+            CBUUID* Uuid29 = [CBUUID UUIDWithString:@"1820"];
+            CBUUID* Uuid30 = [CBUUID UUIDWithString:@"1821"];
+            CBUUID* Uuid31 = [CBUUID UUIDWithString:@"1822"];
+            CBUUID* Uuid32 = [CBUUID UUIDWithString:@"1823"];
+            CBUUID* Uuid33 = [CBUUID UUIDWithString:@"1824"];
+            CBUUID* Uuid34 = [CBUUID UUIDWithString:@"1825"];
+            CBUUID* Uuid35 = [CBUUID UUIDWithString:@"1826"];
+            CBUUID* Uuid36 = [CBUUID UUIDWithString:@"1827"];
+            CBUUID* Uuid37 = [CBUUID UUIDWithString:@"1828"];
+            CBUUID* Uuid38 = [CBUUID UUIDWithString:@"1829"];
+            CBUUID* Uuid39 = [CBUUID UUIDWithString:@"183A"];
+            CBUUID* Uuid40 = [CBUUID UUIDWithString:@"183B"];
+            CBUUID* Uuid41 = [CBUUID UUIDWithString:@"183C"];
+            CBUUID* Uuid42 = [CBUUID UUIDWithString:@"183D"];
+            CBUUID* Uuid43 = [CBUUID UUIDWithString:@"183E"];
+            CBUUID* Uuid44 = [CBUUID UUIDWithString:@"183F"];
+            CBUUID* Uuid45 = [CBUUID UUIDWithString:@"1840"];
+            CBUUID* Uuid46 = [CBUUID UUIDWithString:@"1843"];
+            CBUUID* Uuid47 = [CBUUID UUIDWithString:@"1844"];
+            CBUUID* Uuid48 = [CBUUID UUIDWithString:@"1845"];
+            CBUUID* Uuid49 = [CBUUID UUIDWithString:@"1846"];
+            CBUUID* Uuid50 = [CBUUID UUIDWithString:@"1847"];
+            CBUUID* Uuid51 = [CBUUID UUIDWithString:@"1848"];
+            CBUUID* Uuid52 = [CBUUID UUIDWithString:@"1849"];
+            CBUUID* Uuid53 = [CBUUID UUIDWithString:@"184A"];
+            CBUUID* Uuid54 = [CBUUID UUIDWithString:@"184B"];
+            CBUUID* Uuid55 = [CBUUID UUIDWithString:@"184C"];
+            CBUUID* Uuid56 = [CBUUID UUIDWithString:@"184D"];
+            CBUUID* Uuid57 = [CBUUID UUIDWithString:@"184E"];
+            CBUUID* Uuid58 = [CBUUID UUIDWithString:@"184F"];
+            CBUUID* Uuid59 = [CBUUID UUIDWithString:@"1850"];
+            CBUUID* Uuid60 = [CBUUID UUIDWithString:@"1851"];
+            CBUUID* Uuid61 = [CBUUID UUIDWithString:@"1852"];
+            CBUUID* Uuid62 = [CBUUID UUIDWithString:@"1853"];
+            CBUUID* Uuid63 = [CBUUID UUIDWithString:@"1854"];
+            CBUUID* Uuid64 = [CBUUID UUIDWithString:@"1855"];
+            CBUUID* Uuid65 = [CBUUID UUIDWithString:@"1856"];
+            CBUUID* Uuid66 = [CBUUID UUIDWithString:@"1857"];
+            CBUUID* Uuid67 = [CBUUID UUIDWithString:@"1858"];
+            CBUUID* Uuid68 = [CBUUID UUIDWithString:@"1859"];
+
+            // Create an NSArray with all UUIDs
+            NSArray *uuidsArray = @[
+                gasUuid,
+                Uuid0, Uuid1, Uuid2, Uuid3, Uuid4, Uuid5, Uuid6, Uuid7, Uuid8, Uuid9,
+                Uuid10, Uuid11, Uuid12, Uuid13, Uuid14, Uuid15, Uuid16, Uuid17, Uuid18, Uuid19,
+                Uuid20, Uuid21, Uuid22, Uuid23, Uuid24, Uuid25, Uuid26, Uuid27, Uuid28, Uuid29,
+                Uuid30, Uuid31, Uuid32, Uuid33, Uuid34, Uuid35, Uuid36, Uuid37, Uuid38, Uuid39,
+                Uuid40, Uuid41, Uuid42, Uuid43, Uuid44, Uuid45, Uuid46, Uuid47, Uuid48, Uuid49,
+                Uuid50, Uuid51, Uuid52, Uuid53, Uuid54, Uuid55, Uuid56, Uuid57, Uuid58, Uuid59,
+                Uuid60, Uuid61, Uuid62, Uuid63, Uuid64, Uuid65, Uuid66, Uuid67, Uuid68
+            ];
 
             // this returns devices connected by *any* app
-            NSArray *periphs = [self.centralManager retrieveConnectedPeripheralsWithServices:@[gasUuid, gasUuid1, gasUuid2]];
+            NSArray *periphs = [self.centralManager retrieveConnectedPeripheralsWithServices:uuidsArray];
 
             // Devices
             NSMutableArray *deviceProtos = [NSMutableArray new];
