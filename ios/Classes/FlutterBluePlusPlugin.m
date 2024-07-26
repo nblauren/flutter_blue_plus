@@ -368,8 +368,8 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
             CBUUID* Uuid67 = [CBUUID UUIDWithString:@"1858"];
             CBUUID* Uuid68 = [CBUUID UUIDWithString:@"1859"];
 
-            // Create an NSArray with all UUIDs
-            NSArray *uuidsArray = @[
+            // this returns devices connected by *any* app
+            NSArray *periphs = [self.centralManager retrieveConnectedPeripheralsWithServices:@[
                 gasUuid,
                 Uuid0, Uuid1, Uuid2, Uuid3, Uuid4, Uuid5, Uuid6, Uuid7, Uuid8, Uuid9,
                 Uuid10, Uuid11, Uuid12, Uuid13, Uuid14, Uuid15, Uuid16, Uuid17, Uuid18, Uuid19,
@@ -378,10 +378,7 @@ typedef NS_ENUM(NSUInteger, LogLevel) {
                 Uuid40, Uuid41, Uuid42, Uuid43, Uuid44, Uuid45, Uuid46, Uuid47, Uuid48, Uuid49,
                 Uuid50, Uuid51, Uuid52, Uuid53, Uuid54, Uuid55, Uuid56, Uuid57, Uuid58, Uuid59,
                 Uuid60, Uuid61, Uuid62, Uuid63, Uuid64, Uuid65, Uuid66, Uuid67, Uuid68
-            ];
-
-            // this returns devices connected by *any* app
-            NSArray *periphs = [self.centralManager retrieveConnectedPeripheralsWithServices:uuidsArray];
+            ]];
 
             // Devices
             NSMutableArray *deviceProtos = [NSMutableArray new];
